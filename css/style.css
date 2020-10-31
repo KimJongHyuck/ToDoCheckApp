@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-/* 
-@import "main.css";
 
-@import "center.css"; */
+/* @import "main.css"; */
+
+@import "center.css";
 
 
 
@@ -25,6 +25,9 @@ h3 {
 
 .showing {
     display: block;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
 }
 
 @keyframes fadeIn {
@@ -46,3 +49,22 @@ h3 {
     animation: fadeIn .5s linear;
 } 
 
+.js-toDoList li {
+    list-style-type: none;
+    color: white;
+    font-size: 22px;
+    
+}
+
+.js-toDoList li button {
+    margin-right: 10px;
+}
+
+.js-weather {
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}

@@ -12,8 +12,10 @@ function getWeather(lat, log) {
         }).then(function(json){
             
             const temperature = json.main.temp;
+            const ceiltemperature = Math.ceil(temperature);
             const place = json.name;
-            weather.innerText = `${temperature} @ ${place}`;
+            weather.innerText = `${ceiltemperature}˚c ${place}`;
+            
         });
 }
 
